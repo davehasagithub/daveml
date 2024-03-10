@@ -19,5 +19,6 @@ Tags are subject to change!
 ```bash
 curl -sLO https://raw.githubusercontent.com/davehasagithub/daveml/main/daveml.sh
 chmod u+x ./daveml.sh
-./daveml.sh demo.txt
 ```
+
+<img alt="screenshot" src="./sample.png" />
