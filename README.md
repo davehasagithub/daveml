@@ -10,11 +10,11 @@
 Create a file `demo.txt`, such as:
 
 ```text
-<BBG>|             |
+<WBB>|             |
 <BBG>|   Welcome   |
 <BBG>|             |
 
-<GGG>This is going to be <CCC>cool
+<GXX>This is going to be <CXX>cool
 ```
 
 Run `daveml.sh demo.txt` or `cat demo.txt|daveml.sh`,
