@@ -10,9 +10,9 @@
 Create a file `demo.txt`, such as:
 
 ```text
-<BBG>|             |
-<BBG>|   Welcome   |
-<BBG>|             |
+<WBB>|             |
+<WBB>|   Welcome   |
+<WBB>|             |
 
 <GXX>This is going to be <CXX>cool
 ```
