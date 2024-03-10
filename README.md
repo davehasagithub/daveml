@@ -1,5 +1,7 @@
 # DaveML
 
+<img alt="screenshot" src="./sample.png" />
+
 Possibly the dumbest project on GitHub.
 Instead, you probably want to
 [try](https://stackoverflow.com/questions/7851134/syntax-highlighting-colorizing-cat)
@@ -33,5 +35,3 @@ sudo chmod 755 /usr/local/bin/daveml.sh
 sudo bash -c 'echo "alias daveml=\"/usr/local/bin/daveml.sh\"" >/etc/profile.d/daveml-alias.sh'
 #sign out and back in for the alias to take effect
 ```
-
-<img alt="screenshot" src="./sample.png" />
