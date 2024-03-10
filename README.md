@@ -2,10 +2,10 @@
 
 <img alt="screenshot" src="./sample.png" />
 
-Possibly the dumbest project on GitHub.
-Instead, you probably want to
-[try](https://stackoverflow.com/questions/7851134/syntax-highlighting-colorizing-cat)
-something like: `bat`, `ccat`, `pygmentize`, or `highlight`.
+> Possibly the dumbest project on GitHub.
+> Instead, you probably want to
+> [try](https://stackoverflow.com/questions/7851134/syntax-highlighting-colorizing-cat)
+> something like: `bat`, `ccat`, `pygmentize`, or `highlight`.
 
 Create a file `demo.txt`, such as:
 
