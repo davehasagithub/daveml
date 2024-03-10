@@ -1,6 +1,6 @@
-file="$1"
+file="${1:-/dev/stdin}"
 
-if [ -n "$TERM" ] && [ -r "$file" ]; then
+if [ -n "$TERM" ]; then
   ESC="\e"
 
   if [[ "$TERM" == *color* ]]; then

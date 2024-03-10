@@ -12,7 +12,8 @@ Create a file `demo.txt`, such as:
 <GGG>This is going to be <CCC>cool
 ```
 
-Run `daveml demo.txt`, and it will convert the tags to ANSI color escape codes.
+Run `daveml.sh demo.txt` or `cat demo.txt|daveml.sh`,
+and it will convert the tags to ANSI color escape codes.
 Maybe useful, for example, when showing a motd (message of the day).
 Tags are subject to change!
 
