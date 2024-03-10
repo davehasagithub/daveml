@@ -27,7 +27,7 @@ To install globally:
 ```bash
 sudo curl -sL -o /usr/local/bin/daveml.sh https://raw.githubusercontent.com/davehasagithub/daveml/main/daveml.sh
 sudo chmod 755 /usr/local/bin/daveml.sh
-sudo echo "alias daveml=\"/usr/local/bin/daveml.sh\"" >/etc/profile.d/daveml-alias.sh
+sudo bash -c 'echo "alias daveml=\"/usr/local/bin/daveml.sh\"" >/etc/profile.d/daveml-alias.sh'
 #sign out and back in
 ```
 
