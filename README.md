@@ -10,7 +10,7 @@
 Create a file `demo.txt`, such as:
 
 ```text
-<WBB>|             |
+<BBG>|             |
 <BBG>|   Welcome   |
 <BBG>|             |
 
