@@ -14,7 +14,7 @@ Create a file `demo.txt`, such as:
 <WBB>|   Welcome   |
 <WBB>|             |
 
-<GXX>This is going to be <CXX>cool
+<GXX>This is going to be <CXX>cool <RBX>!!!
 ```
 
 Run `daveml.sh demo.txt` or `cat demo.txt|daveml.sh`,
