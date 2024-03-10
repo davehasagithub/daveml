@@ -22,4 +22,12 @@ curl -sLO https://raw.githubusercontent.com/davehasagithub/daveml/main/daveml.sh
 chmod u+x ./daveml.sh
 ```
 
+To install globally:
+```bash
+sudo curl -sL -o /usr/local/bin/daveml.sh https://raw.githubusercontent.com/davehasagithub/daveml/main/daveml.sh
+sudo chmod 755 /usr/local/bin/daveml.sh
+sodo echo "alias daveml=\"/usr/local/bin/daveml.sh\"" >/etc/profile.d/daveml-alias.sh
+#sign out and back in
+```
+
 <img alt="screenshot" src="./sample.png" />
