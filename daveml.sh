@@ -1,9 +1,35 @@
 #!/usr/bin/env bash
 
 # DaveML by Dave Terrian
-# https://github.com/davehasagithub/daveml/tree/main
+# https://github.com/davehasagithub/daveml/
 
 # Color codes are: <foreground> <bold or X> <background or X>
+
+main() {
+  prefix='| '
+  while getopts ":p:" opt; do
+    case ${opt} in
+      p) prefix="$OPTARG" ;;
+      *) ;;
+    esac
+  done
+  shift $((OPTIND -1))
+
+  file="${1:-/dev/stdin}"
+  CLR="\e[0m"
+  instructions=$(build)
+
+  # shellcheck disable=SC2116
+  perl -pe "
+    $(echo "$instructions")
+    s/<CLR>/$CLR/g;
+  " \
+  "$file" | \
+    perl -pe "
+      s/^(.*\e.*)$/\$1$CLR/g;
+      s/^/${prefix}/g;
+    "
+}
 
 build() {
   declare -A colors=(
@@ -56,19 +82,4 @@ build() {
   done
 }
 
-file="${1:-/dev/stdin}"
-
-CLR="\e[0m"
-
-instructions=$(build)
-
-# shellcheck disable=SC2116
-perl -pe "
-  $(echo "$instructions")
-  s/<CLR>/$CLR/g;
-" \
-"$file" | \
-  perl -pe "
-    s/^(.*\e.*)$/\$1$CLR/g;
-    s/^/| /g;
-  "
+main "$@"

@@ -1,12 +1,10 @@
 # DaveML
 
-<img alt="screenshot" src="./sample.png" />
-
 > Possibly the dumbest project on GitHub. :)
 >
-> Instead, you probably want to
-> [try](https://stackoverflow.com/questions/7851134/syntax-highlighting-colorizing-cat)
-> something like: `bat`, `ccat`, `pygmentize`, or `highlight`.
+> You probably want to
+> [try](https://stackoverflow.com/questions/7851134/syntax-highlighting-colorizing-cat):
+> `bat`, `ccat`, `pygmentize`, or `highlight`.
 
 Create a file `demo.txt`, such as:
 
@@ -18,22 +16,37 @@ Create a file `demo.txt`, such as:
 <GXX>This is going to be <CXX>cool <RBX>!!!
 ```
 
-Run `daveml.sh demo.txt` or `cat demo.txt|daveml.sh`,
-and it will convert the tags to ANSI color escape codes.
-Maybe useful, for example, when showing a motd (message-of-the-day).
+And it will become:
 
-Color codes are: &lt;foreground&gt; &lt;bold or X&gt; &lt;background or X&gt;
+<img alt="screenshot" src="./sample.png" />
 
+## Usage
+
+```bash
+daveml.sh demo.txt
+
+cat demo.txt | daveml.sh
+```
+
+The `| ` line prefix can be removed or changed:
+
+```
+daveml.sh -p "" /etc/motd
+daveml.sh -p ">> " /etc/motd
+```
+
+## Codes
+
+Colors are specified as 3 letter tags, such as `RXX` for red text, or `WBB` for bold white with a blue background.
+
+> &lt;foreground&gt; &lt;bold or X&gt; &lt;background or X&gt;
+>
 > K = black, R = red, G = green, Y = yellow, B = blue
 > M = magenta, C = cyan, W = white, X = default
 
-This does not include support for italic, underline, or strikethrough.
+_This does not include support for italic, underline, or strikethrough._
 
-To use locally:
-```bash
-curl -sLO https://raw.githubusercontent.com/davehasagithub/daveml/main/daveml.sh
-chmod u+x ./daveml.sh
-```
+## Install
 
 To install globally:
 ```bash
@@ -41,4 +54,10 @@ sudo curl -sL -o /usr/local/bin/daveml.sh https://raw.githubusercontent.com/dave
 sudo chmod 755 /usr/local/bin/daveml.sh
 sudo bash -c 'echo "alias daveml=\"/usr/local/bin/daveml.sh\"" >/etc/profile.d/daveml-alias.sh'
 #sign out and back in for the alias to take effect
+```
+
+To use locally:
+```bash
+curl -sLO https://raw.githubusercontent.com/davehasagithub/daveml/main/daveml.sh
+chmod u+x ./daveml.sh
 ```
