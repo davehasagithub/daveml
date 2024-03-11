@@ -49,7 +49,10 @@ Colors are specified as 3 letter tags, such as `RXX` for red text, or `WBB` for 
 > K = black, R = red, G = green, Y = yellow, B = blue
 > M = magenta, C = cyan, W = white, X = default
 
-_This does not include support for italic, underline, or strikethrough._
+## Notes
+
+- This does not currently include support for _italic_, _ underline _, or ~~strikethrough~~.
+- This uses `perl` but could be modified to use `sed` instead.
 
 ## Install
 
