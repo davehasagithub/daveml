@@ -22,7 +22,7 @@ Run `daveml.sh demo.txt` or `cat demo.txt|daveml.sh`,
 and it will convert the tags to ANSI color escape codes.
 Maybe useful, for example, when showing a motd (message-of-the-day).
 
-Color codes are: <foreground> <bold or X> <background or X>
+Color codes are: &lt;foreground&gt; &lt;bold or X&gt; &lt;background or X&gt;
 
 > K = black, R = red, G = green, Y = yellow, B = blue
 > M = magenta, C = cyan, W = white, X = default
