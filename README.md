@@ -1,10 +1,15 @@
 # DaveML
 
-> Possibly the dumbest project on GitHub. :)
->
-> You probably want to
-> [try](https://stackoverflow.com/questions/7851134/syntax-highlighting-colorizing-cat):
-> `bat`, `ccat`, `pygmentize`, or `highlight`.
+Adds color to linux files using simple markup.
+
+For example, `<WBB>` for bold white text on a blue background. This becomes
+the ANSI color escape sequence: `\x1b[37;44;1m`.
+
+Instead of this, you might want to
+[try](https://stackoverflow.com/questions/7851134/syntax-highlighting-colorizing-cat):
+`bat`, `ccat`, `pygmentize`, or `highlight`.
+
+## Example
 
 Create a file `demo.txt`, such as:
 
