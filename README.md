@@ -2,7 +2,8 @@
 
 <img alt="screenshot" src="./sample.png" />
 
-> Possibly the dumbest project on GitHub.
+> Possibly the dumbest project on GitHub. :)
+>
 > Instead, you probably want to
 > [try](https://stackoverflow.com/questions/7851134/syntax-highlighting-colorizing-cat)
 > something like: `bat`, `ccat`, `pygmentize`, or `highlight`.
@@ -19,8 +20,14 @@ Create a file `demo.txt`, such as:
 
 Run `daveml.sh demo.txt` or `cat demo.txt|daveml.sh`,
 and it will convert the tags to ANSI color escape codes.
-Maybe useful, for example, when showing a motd (message of the day).
-Tags are subject to change!
+Maybe useful, for example, when showing a motd (message-of-the-day).
+
+Color codes are: <foreground> <bold or X> <background or X>
+
+> K = black, R = red, G = green, Y = yellow, B = blue
+> M = magenta, C = cyan, W = white, X = default
+
+This does not include support for italic, underline, or strikethrough.
 
 To use locally:
 ```bash
