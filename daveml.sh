@@ -3,8 +3,6 @@
 # DaveML by Dave Terrian
 # https://github.com/davehasagithub/daveml/
 
-# Color codes are: <foreground> <bold or X> <background or X>
-
 main() {
   prefix='| '
   while getopts ":p:" opt; do
