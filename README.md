@@ -52,7 +52,7 @@ Colors are specified as 3 letter tags, such as `RXX` for red text, or `WBB` for 
 ## Notes
 
 - This does not currently include support for _italic_, _ underline _, or ~~strikethrough~~.
-- This uses `perl` but could be modified to use `sed` instead.
+- This uses `perl`, but could be modified to use `sed` instead.
 
 ## Install
 
