@@ -34,7 +34,7 @@ daveml.sh demo.txt
 cat demo.txt | daveml.sh
 ```
 ```bash
-cat <<EOF | daveml -p ""
+cat <<EOF | daveml.sh -p ""
 Usage: <BBX>some-command <YBX>arg1 arg2
 EOF
 ```
