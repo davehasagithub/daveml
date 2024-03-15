@@ -59,6 +59,7 @@ Colors are specified as 3 letter tags, such as `RXX` for red text, or `WBB` for 
 
 - This does not currently include support for _italic_, _ underline _, or ~~strikethrough~~.
 - This uses `perl`, but could be modified to use `sed` instead.
+- Remember, if you do a bold color before a non-bold, you'll need a CLR to remove the bold effect: &lt;BBX&gt;...**&lt;CLR&gt;**&lt;BXX&gt;...
 
 ## Install
 
