@@ -49,6 +49,7 @@ daveml.sh -p ">> " /etc/motd
 ## Codes
 
 Colors are specified as 3 letter tags, such as `RXX` for red text, or `WBB` for bold white with a blue background.
+`CLR` is used to clear/reset.
 
 > &lt;foreground&gt; &lt;bold or X&gt; &lt;background or X&gt;
 >
