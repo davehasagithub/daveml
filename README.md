@@ -29,11 +29,17 @@ And it will become:
 
 ```bash
 daveml.sh demo.txt
-
+````
+```bash
 cat demo.txt | daveml.sh
 ```
+```bash
+cat <<EOF | daveml -p ""
+Usage: <BBX>some-command <YBX>arg1 arg2
+EOF
+```
 
-The `| ` line prefix can be removed or changed:
+The current default is to show a `| ` line prefix. It can be removed or changed with `-p`:
 
 ```
 daveml.sh -p "" /etc/motd
